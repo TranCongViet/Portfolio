@@ -28,7 +28,7 @@ export const Header = () => {
     <>
       <div
         className={`flex h-[64px] w-full lg:justify-around
-         items-center justify-between px-4 py-3 fixed top-0 left-0 z-20 backdrop-blur-sm transition-all duration-300 ${
+         items-center justify-between px-4 py-3 fixed top-0 left-0 z-20  transition-all duration-300 ${
            isScrolled
              ? 'bg-gray-900/90 shadow-lg shadow-purple/20'
              : 'bg-black/30'
@@ -83,7 +83,7 @@ export const Header = () => {
 
       {/* Menu Mobile Dropdown - Loại bỏ khoảng hở */}
       <div
-        className={`lg:hidden backdrop-blur-sm fixed top-[64px] left-0 w-full flex flex-col items-center space-y-4 py-6 z-10 border-t border-purple/20 transition-all duration-500 ease-out ${
+        className={`lg:hidden  fixed top-[64px] left-0 w-full flex flex-col items-center space-y-4 py-6 z-10 border-t border-purple/20 transition-all duration-500 ease-out ${
           isMenuOpen
             ? 'translate-y-0 opacity-100 visible'
             : '-translate-y-full opacity-0 invisible'
