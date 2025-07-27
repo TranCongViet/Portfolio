@@ -20,7 +20,7 @@ export const Home = () => {
         <div className="text-left space-y-6">
           <div className="space-y-2 ">
             <h2 className="text-2xl lg:text-3xl text-gray-300 font-light">
-              Hello, I'm
+              Test auto Hello, I'm
             </h2>
             <h1 className="text-4xl lg:text-6xl font-bold  text-white ">
               Trần Công{' '}
