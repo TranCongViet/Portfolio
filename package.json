@@ -6,6 +6,7 @@
   "homepage": "https://github.com/TranCongViet/Portfolio",
   "scripts": {
     "dev": "vite",
+    "predeploy": "npm run build",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
