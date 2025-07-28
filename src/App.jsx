@@ -1,13 +1,7 @@
 import './index.css';
-import { Header, Footer } from './components/layouts';
-import {
-  StarsCanvas,
-  Home,
-  Contact,
-  Resume,
-  About,
-  Projects,
-} from './components';
+import { Header, Footer } from './layouts';
+import { Home, Contact, Resume, About, Projects } from './sections';
+import { StarsCanvas } from './components';
 import { ToastContainer } from 'react-toastify';
 function App() {
   return (

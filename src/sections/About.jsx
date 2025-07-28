@@ -1,8 +1,10 @@
+import Swiper from 'swiper';
 import aboutImage from '../assets/about.svg';
+import { LogoCarousel } from '../components';
 export const About = () => {
   return (
-    <section id="about" className="lg:h-screen  px-8 py-40 md:px-16 lg:px-24">
-      <div className="w-full h-full grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-10">
+    <section id="about" className="lg:h-screen  px-8 pt-20 md:px-16 lg:px-24">
+      <div className="w-full h-auto grid grid-cols-1 lg:grid-cols-[7fr_3fr] gap-10">
         {/* Left Side - Introduct and Name */}
         <div className="text-[19.2px] mt-10 text-gray-300 leading-relaxed">
           <h1 className="text-purple text-4xl ">LET ME INTRODUCE MYSELF</h1>
@@ -26,14 +28,20 @@ export const About = () => {
             </p>
           </p>
         </div>
-        <div>
+        {/* Right Side - Image */}
+        <div className="">
           <img
             src={aboutImage}
             alt="About Me"
             className="w-full h-full object-cover "
           />
         </div>
-        {/* Right Side - Image */}
+      </div>
+      <div>
+        <h1 className="text-purple mt-10">
+          The skills, tools and technologies I use
+        </h1>
+        <LogoCarousel />
       </div>
     </section>
   );

@@ -51,7 +51,7 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center justify-center px-8 py-40 md:px-16 lg:px-24 mb-10 text-sm text-white"
+      className="flex flex-col items-center justify-center px-8 py-40 mt-10 md:px-16 lg:px-24 mb-10 text-sm text-white"
     >
       <h1 className="text-4xl font-bold text-purple mb-20">Contact with me</h1>
 

@@ -20,7 +20,7 @@ const ListProjects = [
 
 export const Projects = () => {
   return (
-    <section id="projects" className="mb-50">
+    <section id="projects" className="mb-50 ">
       <h1 className="text-4xl font-bold text-center text-purple mb-2 mt-40">
         My Projects
       </h1>

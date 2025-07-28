@@ -1,7 +1,7 @@
 import myCV from '../assets/myCV.jpg';
 export const Resume = () => {
   return (
-    <section id="resume" className=" text-white text-center mx-auto pt-40">
+    <section id="resume" className=" text-white text-center mx-auto ">
       <h1 className="text-4xl font-bold text-purple mb-20">My Resume</h1>
 
       <img
