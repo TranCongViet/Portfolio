@@ -7,10 +7,10 @@ import 'swiper/css/free-mode';
 
 export const LogoCarousel = () => {
   return (
-    <div className="w-[1000px] p-10 flex justify-center mx-auto ">
+    <div className="w-[300px] sm:w-[600px] md:w-[800px] lg:w-full p-10 flex justify-center mx-auto ">
       <Swiper
         modules={[Autoplay, FreeMode]}
-        slidesPerView={6}
+        slidesPerView={2}
         spaceBetween={30}
         loop={true}
         autoplay={{
@@ -21,6 +21,28 @@ export const LogoCarousel = () => {
         }}
         speed={3000}
         freeMode={{ enabled: true, momentum: true, sticky: false }}
+        breakpoints={{
+          0: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          640: {
+            slidesPerView: 3,
+            spaceBetween: 25,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 30,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 30,
+          },
+          1280: {
+            slidesPerView: 6,
+            spaceBetween: 40,
+          },
+        }}
       >
         {skillLogos.map((logo, index) => {
           console.log(logo.src);
