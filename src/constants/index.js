@@ -1,12 +1,12 @@
 export const skillLogos = [
   {
     skillName: 'JavaScript',
-    src: './javascriptLogo.svg',
+    src: './javaScriptLogo.svg',
     alt: 'JavaScript Logo',
   },
   {
     skillName: 'TypeScript',
-    src: './javascriptLogo.svg',
+    src: './typeScriptLogo.svg',
     alt: 'TypeScript Logo',
   },
   {
@@ -25,18 +25,18 @@ export const skillLogos = [
     alt: 'Nodejs Logo',
   },
   {
-    skillName: 'Github',
+    skillName: 'Git/Github',
     src: './githubLogo.svg',
     alt: 'Github Logo',
   },
   {
-    skillName: 'JavaScript',
-    src: './javascriptLogo.svg',
-    alt: 'JavaScript Logo',
+    skillName: 'Nextjs',
+    src: './nextjsLogo.svg',
+    alt: 'Nextjs Logo',
   },
   {
-    skillName: 'TypeScript',
-    src: './javascriptLogo.svg',
-    alt: 'TypeScript Logo',
+    skillname: 'Vercel',
+    src: './vercelLogo.svg',
+    alt: 'Vercel Logo',
   },
 ];

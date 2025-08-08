@@ -3,18 +3,26 @@ import imageTest from '../assets/image.png';
 const ListProjects = [
   {
     image: imageTest,
-    title: 'Title1',
-    description: 'Description for project 1',
+    title: 'Book Management',
+    description: 'A web application for managing books',
+    github: 'https://github.com/minhthuan059/Project_Web',
+    deploy: '',
   },
   {
     image: imageTest,
-    title: 'Title2',
-    description: 'Description for project 2',
+    title: 'Movie recommendation Website',
+    description:
+      'A user-friendly website that helps users easily search for and discover their favorite movies',
+    github: 'https://github.com/TranCongViet/WebAdvancedFinalProject ',
+    deploy: 'https://trancongviet.github.io/WebAdvancedFinalProject/',
   },
   {
     image: imageTest,
-    title: 'Title3',
-    description: 'Description for project 3',
+    title: 'TCVShop',
+    description:
+      'TCV Shop is an e-commerce platform specializing in electronic products',
+    github: 'https://github.com/TranCongViet/TCVShop',
+    deploy: 'https://tcv-shop.vercel.app/',
   },
 ];
 
@@ -50,11 +58,14 @@ export const Projects = () => {
               />
 
               {/* Hover icon */}
-              <div
+              <a
+                href={project.deploy || '#'}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="absolute top-4 right-4 w-10 h-10 bg-purple/80 rounded-full 
-                  flex items-center justify-center text-white
-                  opacity-0 group-hover:opacity-100 
-                  transition-all duration-500 transform translate-y-4 group-hover:translate-y-0"
+             flex items-center justify-center text-white
+             opacity-0 group-hover:opacity-100 
+             transition-all duration-500 transform translate-y-4 group-hover:translate-y-0"
               >
                 <svg
                   className="w-5 h-5"
@@ -69,7 +80,7 @@ export const Projects = () => {
                     d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
                   />
                 </svg>
-              </div>
+              </a>
             </div>
 
             {/* Text content + button */}
@@ -86,7 +97,7 @@ export const Projects = () => {
               {/* GitHub button */}
               <div className="flex items-center justify-center ">
                 <a
-                  href="https://abc.com"
+                  href={project.github}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="w-[100px] h-[50px] text-sm font-medium 
