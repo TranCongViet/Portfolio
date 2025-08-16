@@ -7,7 +7,7 @@ import 'swiper/css/free-mode';
 
 export const LogoCarousel = () => {
   return (
-    <div className="w-[300px] sm:w-[600px] md:w-[800px] lg:w-full p-10 flex justify-center mx-auto ">
+    <div className="mx-auto flex w-[300px] justify-center p-10 sm:w-[600px] md:w-[800px] lg:w-full">
       <Swiper
         modules={[Autoplay, FreeMode]}
         slidesPerView={2}
@@ -48,11 +48,11 @@ export const LogoCarousel = () => {
           console.log(logo.src);
           return (
             <SwiperSlide key={index}>
-              <div className="w-20 h-20 md:w-20 md:h-20 p-3 cursor-pointer backdrop-blur-sm rounded-lg border border-purple/20 hover:border-purple/60 transition-all duration-300">
+              <div className="border-purple/20 hover:border-purple/60 h-20 w-20 cursor-pointer rounded-lg border bg-gray-800 p-3 backdrop-blur-sm transition-all duration-300 md:h-20 md:w-20">
                 <img
                   src={logo.src}
                   // alt={typeof logo === 'string' ? `Skill ${index + 1}` : logo.alt}
-                  className="w-full object-contain "
+                  className="w-full object-contain"
                 />
               </div>
             </SwiperSlide>

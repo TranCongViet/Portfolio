@@ -14,24 +14,24 @@ export const Home = () => {
   }, [roles.length]);
 
   return (
-    <section id="home" className="h-screen px-8 py-10 lg:px-24 mt-10 lg:mt-0">
-      <div className="max-w-7xl w-full h-full grid grid-cols-1  lg:grid-cols-2 items-center">
+    <section id="home" className="mt-10 h-screen px-8 py-10 lg:mt-0 lg:px-24">
+      <div className="grid h-full w-full max-w-7xl grid-cols-1 items-center lg:grid-cols-2">
         {/* Left Side - Greeting and Name */}
-        <div className="text-left space-y-6">
-          <div className="space-y-2 ">
-            <h2 className="text-2xl lg:text-3xl text-gray-300 font-light">
+        <div className="space-y-6 text-left">
+          <div className="space-y-2">
+            <h2 className="text-2xl font-light text-gray-300 lg:text-3xl">
               Hello, I'm
             </h2>
-            <h1 className="text-4xl lg:text-6xl font-bold  text-white ">
+            <h1 className="text-4xl font-bold text-white lg:text-6xl">
               Trần Công{' '}
-              <span className="bg-gradient-to-r from-purple to-pink-500 bg-clip-text text-transparent">
+              <span className="from-purple bg-gradient-to-r to-pink-500 bg-clip-text text-transparent">
                 Việt
               </span>
             </h1>
           </div>
 
           <div className="space-y-4">
-            <h3 className="text-xl lg:text-2xl text-purple font-medium">
+            <h3 className="text-purple text-xl font-medium lg:text-2xl">
               <AnimatePresence mode="wait">
                 <motion.span
                   key={roles[index]}
@@ -46,7 +46,7 @@ export const Home = () => {
               </AnimatePresence>
             </h3>
 
-            <p className="text-lg text-gray-300 leading-relaxed max-w-lg">
+            <p className="max-w-lg text-lg leading-relaxed text-gray-300">
               I'm a passionate developer who loves creating amazing web
               experiences with React, JavaScript, and modern technologies.
             </p>
@@ -56,23 +56,20 @@ export const Home = () => {
         {/* Right Side - Image */}
         <div className="flex justify-center lg:justify-end">
           <div className="relative">
-            <div
-              className="w-80 h-80 lg:w-96 lg
-            :h-96 bg-gradient-to-br from-purple/20 to-pink-500/20 rounded-full flex items-center justify-center border-4 border-purple/30"
-            >
-              <div className="w-72 h-72 lg:w-88 lg:h-88 bg-gray-800 rounded-full flex items-center justify-center">
+            <div className="lg :h-96 from-purple/20 border-purple/30 flex h-80 w-80 items-center justify-center rounded-full border-4 bg-gradient-to-br to-pink-500/20 lg:w-96">
+              <div className="flex h-72 w-72 items-center justify-center rounded-full bg-gray-800 lg:h-88 lg:w-88">
                 <img
                   src={myImage}
                   alt="Trần Công Việt"
-                  className="w-full h-full object-cover rounded-full"
+                  className="h-full w-full rounded-full object-cover"
                 />
               </div>
             </div>
 
             {/* Decorative elements */}
-            <div className="absolute top-4 -right-4 w-8 h-8 bg-purple rounded-full animate-pulse"></div>
-            <div className="absolute -bottom-4 -left-4 w-6 h-6 bg-pink-500 rounded-full animate-pulse delay-1000"></div>
-            <div className="absolute top-1/2 -left-8 w-4 h-4 bg-blue-400 rounded-full animate-bounce delay-500"></div>
+            <div className="bg-purple absolute top-4 -right-4 h-8 w-8 animate-pulse rounded-full"></div>
+            <div className="absolute -bottom-4 -left-4 h-6 w-6 animate-pulse rounded-full bg-pink-500 delay-1000"></div>
+            <div className="absolute top-1/2 -left-8 h-4 w-4 animate-bounce rounded-full bg-blue-400 delay-500"></div>
           </div>
         </div>
       </div>

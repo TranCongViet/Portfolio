@@ -15,6 +15,11 @@ export const skillLogos = [
     alt: 'Html Logo',
   },
   {
+    skillName: 'Css',
+    src: './cssLogo.svg',
+    alt: 'Css Logo',
+  },
+  {
     skillName: 'Rectjs',
     src: './reactjsLogo.svg',
     alt: 'Rectjs Logo',

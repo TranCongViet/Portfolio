@@ -4,25 +4,23 @@ import myCV from '../assets/MyCV_TCV.pdf';
 
 export const Resume = () => {
   return (
-    <section id="resume" className="text-white text-center mx-auto">
-      <h1 className="text-4xl font-bold text-purple mb-20">My Resume</h1>
+    <section id="resume" className="mx-auto text-center text-white">
+      <h1 className="text-purple mb-20 text-4xl font-bold">My Resume</h1>
 
       <img
         src={myCV1}
         alt="My CV page 1"
-        className="md:w-[700px] w-auto h-auto rounded-lg shadow-lg mb-6"
+        className="mb-6 h-auto w-auto rounded-lg shadow-lg md:w-[700px]"
       />
       <img
         src={myCV2}
         alt="My CV page 2"
-        className="md:w-[700px] w-auto h-auto rounded-lg shadow-lg mb-6"
+        className="mb-6 h-auto w-auto rounded-lg shadow-lg md:w-[700px]"
       />
-
-      {/* Nếu bạn muốn người dùng tải cả 2 trang, thì bạn có thể nén 2 file thành 1 file PDF rồi cho tải */}
       <a
         href={myCV}
         download="My_CV"
-        className="block mt-6 text-purple-500 hover:underline"
+        className="mt-6 block text-purple-500 hover:underline"
       >
         Download Full CV
       </a>
