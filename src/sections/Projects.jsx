@@ -1,4 +1,6 @@
 import imageTest from '../assets/image.png';
+import portfolioImg from '../assets/portfolio.png';
+import movieWeb from '../assets/movieWeb.png';
 
 const ListProjects = [
   {
@@ -9,7 +11,7 @@ const ListProjects = [
     deploy: '',
   },
   {
-    image: imageTest,
+    image: movieWeb,
     title: 'Movie recommendation Website',
     description:
       'A user-friendly website that helps users easily search for and discover their favorite movies',
@@ -17,7 +19,7 @@ const ListProjects = [
     deploy: 'https://trancongviet.github.io/WebAdvancedFinalProject/',
   },
   {
-    image: imageTest,
+    image: portfolioImg,
     title: 'TCVShop',
     description:
       'TCV Shop is an e-commerce platform specializing in electronic products',
@@ -47,7 +49,7 @@ export const Projects = () => {
               <img
                 src={project.image}
                 alt={project.title}
-                className="h-full w-full rounded-t-2xl object-cover transition duration-700 ease-out group-hover:scale-110 group-hover:rotate-1"
+                className="h-full w-full rounded-t-2xl object-contain transition duration-700 ease-out group-hover:scale-110 group-hover:rotate-1"
               />
 
               {/* Hover icon */}
@@ -79,7 +81,7 @@ export const Projects = () => {
                 <h2 className="group-hover:text-purple mb-3 text-center text-xl font-semibold text-white transition-colors duration-300">
                   {project.title}
                 </h2>
-                <p className="px-2 text-center leading-relaxed text-gray-300 transition-colors duration-300 group-hover:text-gray-200">
+                <p className="line-clamp-3 px-2 text-center leading-relaxed text-gray-300 transition-colors duration-300 group-hover:text-gray-200">
                   {project.description}
                 </p>
               </div>

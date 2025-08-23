@@ -51,22 +51,22 @@ export const Contact = () => {
   return (
     <section
       id="contact"
-      className="flex flex-col items-center justify-center px-8 py-40 mt-10 md:px-16 lg:px-24 mb-10 text-sm text-white"
+      className="mt-10 mb-10 flex flex-col items-center justify-center px-8 py-40 text-sm text-white md:px-16 lg:px-24"
     >
-      <h1 className="text-4xl font-bold text-purple mb-20">Contact with me</h1>
+      <h1 className="text-purple mb-20 text-4xl font-bold">Contact with me</h1>
 
       <form
         onSubmit={handleSubmit}
-        className="flex flex-col items-center w-full max-w-2xl gap-4"
+        className="flex w-full max-w-2xl flex-col items-center gap-4"
       >
-        <div className="flex flex-col md:flex-row items-center justify-center w-full gap-10">
+        <div className="flex w-full flex-col items-center justify-center gap-10 md:flex-row">
           <input
             type="text"
             placeholder="Your Name"
             value={formData.name}
             onChange={handleChange}
             required
-            className="p-2 rounded w-full bg-[#1e293b] border border-[#334155] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+            className="w-full rounded border border-[#334155] bg-[#1e293b] p-2 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 focus:outline-none"
           />
           <input
             type="email"
@@ -74,7 +74,7 @@ export const Contact = () => {
             value={formData.email}
             onChange={handleChange}
             required
-            className="p-2 rounded w-full bg-[#1e293b] border border-[#334155] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+            className="w-full rounded border border-[#334155] bg-[#1e293b] p-2 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 focus:outline-none"
           />
         </div>
 
@@ -83,21 +83,14 @@ export const Contact = () => {
           value={formData.message}
           onChange={handleChange}
           required
-          className="p-2 rounded w-full bg-[#1e293b] border border-[#334155] focus:outline-none focus:ring-2 focus:ring-purple-500 focus:border-purple-500"
+          className="w-full rounded border border-[#334155] bg-[#1e293b] p-2 focus:border-purple-500 focus:ring-2 focus:ring-purple-500 focus:outline-none"
           rows="5"
         ></textarea>
 
         <button
           type="submit"
           disabled={isLoading}
-          className="
-            flex justify-center items-center  w-[200px] h-[50px] bg-purple-500
-            rounded-lg cursor-pointer 
-            transition duration-300
-            hover:bg-purple-600
-            hover:scale-105
-            mt-5 p-5
-        "
+          className="mt-5 flex h-[50px] w-[200px] cursor-pointer items-center justify-center rounded-lg bg-purple-500 p-5 transition duration-300 hover:scale-105 hover:bg-purple-600"
         >
           {isLoading ? <DotLoader color="#100c0d" size={30} /> : 'Send Message'}
         </button>
